@@ -15,7 +15,9 @@ export class RootNavComponent {
       map(result => result.matches),
       shareReplay()
     );
-
+    toggleMenu() {
+      this.toggleMenu();
+  }
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }
