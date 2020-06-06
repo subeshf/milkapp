@@ -15,3 +15,12 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-icon-button ::ng-deep .mat-button-focus-overlay {
+  display: none;
+}
+
+*:focus {
+  outline: none !important;
+  border: 0 !important;
+}

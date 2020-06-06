@@ -5,9 +5,9 @@
       [opened]="(isHandset$ | async) === false"  >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/home" (click)="toggleSidebar()">home</a>
-      <a mat-list-item routerLink="/login" >login</a>
-      <a mat-list-item routerLink="/sigup">sigup</a>
+      <a mat-list-item routerLink="/home" (click)="drawer.toggle()" >home</a>
+      <a mat-list-item routerLink="/login" (click)="drawer.toggle()">login</a>
+      <a mat-list-item routerLink="/sigup" (click)="drawer.toggle()">sigup</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
