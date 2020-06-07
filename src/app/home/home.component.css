@@ -5,6 +5,10 @@ img {
   
   }
 
-  .right.carousel-control, .left.carousel-control {
+  .carousel-control-next-icon, .left.carousel-control {
     display: none;
+}
+.carousel-control-next-icon, .left.carousel-control {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
 }
