@@ -20,6 +20,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { CowmilkComponent } from './cowmilk/cowmilk.component';
+import { OrdergivingComponent } from './ordergiving/ordergiving.component';
+import { OrderdashboardComponent } from './orderdashboard/orderdashboard.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { MatListModule } from '@angular/material/list';
     IntroComponent,
     LoginComponent,
     SigupComponent,
-    RootNavComponent
+    RootNavComponent,
+    CowmilkComponent,
+    OrdergivingComponent,
+    OrderdashboardComponent
   ],
   imports: [
     BrowserModule,
