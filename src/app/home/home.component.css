@@ -2,21 +2,10 @@ img {
     height: 30vh;
     width: 100%;
     object-fit: cover;
-  
+    z-index:1000 !important;
   }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    display: none;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  opacity: 0;
-  filter:alpha(opacity=0); /* IE support */
-}
+  .carousel-inner{
+    z-index:1000 !important;
+  }
 
-.carousel-control-prev {
-  z-index:100 !important;
-}
-
-.carousel-control-next{
-  z-index:100 !important;
-}
