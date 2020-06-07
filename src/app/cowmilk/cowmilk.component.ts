@@ -7,9 +7,9 @@ import {OrderService} from '../shared/order.service';
 })
 export class CowmilkComponent implements OnInit {
 
-  constructor(private orderService: OrderService) { }
+  constructor(public orderService: OrderService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
