@@ -12,3 +12,11 @@ img {
   opacity: 0;
   filter:alpha(opacity=0); /* IE support */
 }
+
+.carousel-control-prev {
+  z-index:100 !important;
+}
+
+.carousel-control-next{
+  z-index:100 !important;
+}
