@@ -23,7 +23,7 @@ import { MatListModule } from '@angular/material/list';
 import { CowmilkComponent } from './cowmilk/cowmilk.component';
 import { OrdergivingComponent } from './ordergiving/ordergiving.component';
 import { OrderdashboardComponent } from './orderdashboard/orderdashboard.component';
-
+import { OrderService  } from './shared/order.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +53,7 @@ import { OrderdashboardComponent } from './orderdashboard/orderdashboard.compone
     MatGridListModule,
     MatListModule
   ],
-  providers: [],
+  providers: [OrderService ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
