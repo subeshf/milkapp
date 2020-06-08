@@ -22,10 +22,10 @@ export class OrderService {
      return this.orderList.snapshotChanges();
    }
 
-   insertOrder(cowmilkorders){
+   insertOrder(  cowmilkorder: any){
      this.orderList.push({
-       fullName: cowmilkorders.fullName,
-       mobile: cowmilkorders.mobile
+       fullName: cowmilkorder.fullName,
+       mobile: cowmilkorder.mobile
      });
    }
 }
