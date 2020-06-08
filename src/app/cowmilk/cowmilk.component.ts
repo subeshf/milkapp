@@ -19,7 +19,10 @@ formControls =this.orderService.form.controls;
     if(this.orderService.form.valid){
      if (this.orderService.form.get('$key').value == null)
      this.orderService.insertOrder(this.orderService.form.value);
-     this.showSuccessMessage =true;
+     
+    else
+    this.orderService.insertOrder(this.orderService.form.value);
+    this.showSuccessMessage =true;
      setTimeout(() =>this.showSuccessMessage =false,3000);
      this.submitted= false;
     }
