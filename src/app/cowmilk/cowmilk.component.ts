@@ -17,7 +17,7 @@ formControls =this.orderService.form.controls;
     this.submitted=true;
    
     if(this.orderService.form.valid){
-     if (this.orderService.form.get('$key').value ==null)
+     if (this.orderService.form.get('$key').value == null)
      this.orderService.insertOrder(this.orderService.form.value);
      //insert
 
