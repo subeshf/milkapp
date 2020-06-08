@@ -24,6 +24,9 @@ import { CowmilkComponent } from './cowmilk/cowmilk.component';
 import { OrdergivingComponent } from './ordergiving/ordergiving.component';
 import { OrderdashboardComponent } from './orderdashboard/orderdashboard.component';
 import { OrderService  } from './shared/order.service';
+import { AngularFireModule} from 'angularfire2';
+import { AngularFireDatabaseModule} from 'angularfire2/database';
+ import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -51,8 +54,12 @@ import { OrderService  } from './shared/order.service';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
+    AngularFireModule,
+    AngularFireDatabaseModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [OrderService ],
   bootstrap: [AppComponent]
