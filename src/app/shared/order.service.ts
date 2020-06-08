@@ -11,7 +11,7 @@ export class OrderService {
   orderList: AngularFireList<any>;
    form = new FormGroup({
      $key: new FormControl(null),
-     fullName: new FormControl('',Validators.required),
+     fullname: new FormControl('',Validators.required),
      email: new FormControl('',Validators.email),
      mobile: new FormControl('',[Validators.required,Validators.minLength(10)])
 
