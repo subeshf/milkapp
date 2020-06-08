@@ -8,8 +8,18 @@ import {OrderService} from '../shared/order.service';
 export class CowmilkComponent implements OnInit {
 
   constructor(public orderService: OrderService) { }
-
+submitted:boolean;
+formControls =this.orderService.form.controls;
   ngOnInit() {
   }
+  onSubmit(){
+    this.submitted=true;
+    if(this.orderService.form.valid){
+     // if (this.orderService.form.get('$').value ==null)
+     //insert
+     this.submitted= false;
+    }
+  
 
+  }
 }
