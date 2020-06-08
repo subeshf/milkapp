@@ -24,7 +24,7 @@ export class OrderService {
 
    insertOrder(  cowmilkorder: any){
      this.orderList.push({
-       fullName: cowmilkorder.fullName,
+       fullname: cowmilkorder.fullname,
        mobile: cowmilkorder.mobile
      });
    }
