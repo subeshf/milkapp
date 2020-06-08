@@ -22,7 +22,7 @@ export class OrderService {
      return this.orderList.snapshotChanges();
    }
 
-   insertOrder(  cowmilkorder: any){
+   insertOrder(cowmilkorder :any){
      this.orderList.push({
        fullname: cowmilkorder.fullname,
        mobile: cowmilkorder.mobile
